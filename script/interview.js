@@ -33,3 +33,7 @@ document.getElementById('all').addEventListener('click', function(){
     }
 
 })
+
+
+ 
+
