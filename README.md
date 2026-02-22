@@ -1,4 +1,5 @@
-<!-- Question-1 -->
+Question-1 :
+
 
 getElementById -> gets one element by its ID.
 getElementsByClassName -> gets all elements with that class.
@@ -6,7 +7,14 @@ querySelector ->  gets first element that matches a CSS selector.
 querySelectorAll -> gets all elements that match a CSS selector.
 
 
-<!-- Question-2 -->
+
+
+
+Question-2 :
+
+
+
+
 1.Create element
 
 const newDiv = document.createElement('div');
@@ -22,7 +30,12 @@ document.body.appendChild(newDiv);
 document.body.prepend(newDiv); 
 
 
-<!--Question-3 -->
+
+
+Question-3 :
+
+
+
 
 Event Bubbling means an event on a child element goes up to its parent elements automatically.
 
@@ -33,7 +46,12 @@ document.getElementById('button').addEventListener('click', function() {
 });
 
 
-<!-- Question-4 -->
+
+
+Question-4 :
+
+
+
 Event Delegation means putting an event listener on a parent element to handle events for its child elements.
 
 Example:
@@ -48,7 +66,12 @@ list.addEventListener('click', function(event) {
 
 Why useful: saves memory and code because you don’t need a separate listener for each child.
 
-<!-- Question-5 -->
+
+
+
+Question-5 :
+
+
 
 preventDefault() --> Stops the default action
 
