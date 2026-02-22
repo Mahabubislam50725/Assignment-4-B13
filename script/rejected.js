@@ -37,7 +37,7 @@ document.addEventListener('click', function(event){
         const RejectCard = target.closest('.banner-card');
         const RejectCardContrain = RejectCard.querySelector('.not-applied')
         
-        RejectCardContrain.innerHTML = `<p class="Reject-p-change btn text-error bg-none border border-error">REJECTED</p>`
+        RejectCardContrain.innerHTML = `<p class="Reject-p-change btn text-base-200 bg-error border border-error">REJECTED</p>`
         
         const noJobsDivRejected = rejectedCardSection.querySelector('.rejected-div');
         noJobsDivRejected.classList.add('hidden');
@@ -58,7 +58,7 @@ document.addEventListener('click', function(event){
         const InterviewCard = target.closest('.banner-card');
         const CardContrain = InterviewCard.querySelector('.not-applied');
         
-        CardContrain.innerHTML = `<p class="Interview-p-change btn text-accent bg-none border border-accent">INTERVIEW</p>`;
+        CardContrain.innerHTML = `<p class="Interview-p-change btn text-base-200 bg-accent border border-accent">INTERVIEW</p>`;
         
         const noJobsDiv = interviewCardSection.querySelector('.interview-div');
         noJobsDiv.classList.add('hidden');
