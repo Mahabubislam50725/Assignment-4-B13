@@ -34,6 +34,37 @@ document.getElementById('all').addEventListener('click', function(){
 
 })
 
+const InterViewHeadPara=document.getElementById('interview-p')
+let InterViewCount=0;
+const InterViewBtns = document.getElementsByClassName('Interview-btn')
+
+for(const InterViewBtn of InterViewBtns){
+
+    InterViewBtn.addEventListener('click', function(event){
+        const InterviewCard = event.target.closest('.banner-card');
+        const CardContrain=
+        InterviewCard.querySelector('.not-applied')
+        CardContrain.innerHTML=`
+        <p class="Interview-p-change btn text-accent bg-none border border-accent ">INTERVIEW </p> `
+
+
+        
+
+        if(InterViewBtn.getAttribute('data-clicked') === 'true'){
+            return; 
+        }
+
+        InterViewBtn.setAttribute('data-clicked', 'true');
+
+        InterViewCount++;
+
+        InterViewHeadPara.innerText=InterViewCount;
+
+          
+    })
+
+}
+
 
  
 
